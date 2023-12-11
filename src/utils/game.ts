@@ -50,7 +50,6 @@ export class Game {
   ): BoardMap | null {
     const path = this.getWinningPath(rowIndex, colIndex, player);
 
-    // If no path, return the original coords
     if (!path) {
       return null;
     }
